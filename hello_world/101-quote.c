@@ -10,6 +10,6 @@ int main(void)
 {
 	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
-	fprintf("%s\n",stderr, str);
+	fprintf(stderr, "%s\n", str);
 	return (1);
 }
