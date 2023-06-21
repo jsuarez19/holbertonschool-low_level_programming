@@ -24,6 +24,7 @@ void print_to_98(int n)
 		{
 			_putchar('-');
 			a = a * -1;
+			b = b * -1;
 		}
 
 
