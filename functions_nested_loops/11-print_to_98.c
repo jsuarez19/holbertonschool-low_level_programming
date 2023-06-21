@@ -28,6 +28,7 @@ void print_to_98(int n)
 				_putchar('-');
 				a = a * -1;
 				b = b * -1;
+				c = c * -1;
 			}
 
 			if (c != 0)
@@ -36,7 +37,7 @@ void print_to_98(int n)
 				a = a % 10;
 			}
 
-			if (i >= 99 || i <= -99)
+			if (i >= 9 || i <= -9)
 				_putchar(a + '0');
 
 			_putchar(b + '0');
