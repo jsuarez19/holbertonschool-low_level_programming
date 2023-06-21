@@ -3,13 +3,13 @@
 /* more headers goes there */
 
 /**
- * jack_bauer - Prints every minute of a day
+ * times_table - Prints the 9 times table starting with 0
  *
  * Return: void on success
  *
  */
 
-void jack_bauer(void)
+void times_table(void)
 {
 	int i, j, a, b, num;
 
