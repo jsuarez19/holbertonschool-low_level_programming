@@ -23,7 +23,7 @@ void print_to_98(int n)
 		if (i < 0)
 		{
 			_putchar('-');
-			a = a * -1
+			a = a * -1;
 		}
 
 
