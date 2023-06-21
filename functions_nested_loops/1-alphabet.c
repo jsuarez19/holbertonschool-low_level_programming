@@ -3,14 +3,18 @@
 /* more headers goes there */
 
 /**
- * main - Entry point of the program
+ * print_alphabet - Entry point of the program
  *
- * Return: 0 on success
+ * Return: void on success
  *
  */
-int main(void)
+print_alphabet()
 {
-	print_alphabet();
+	for (i = 0; i < 26; i++)
+	{
+		_putchar(letter);
+		letter++;
+	}
 
-	return (0);
+	_putchar('\n');
 }
