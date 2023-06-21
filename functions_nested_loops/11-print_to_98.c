@@ -13,7 +13,7 @@
 
 void print_to_98(int n)
 {
-	int i, a, b;
+	int i, a, b, c;
   	
 	if (n > 98)
 	{
@@ -21,6 +21,7 @@ void print_to_98(int n)
 		{
 			a = i / 10;
 			b = i % 10;
+			c = i / 100;
 
 			if (i < 0)
 			{
@@ -28,6 +29,9 @@ void print_to_98(int n)
 				a = a * -1;
 				b = b * -1;
 			}
+
+			if (c != 0)
+				_putchar(c + '0');
 
 			if (a != 0)
 				_putchar(a + '0');
