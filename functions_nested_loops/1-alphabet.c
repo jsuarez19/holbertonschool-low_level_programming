@@ -8,8 +8,11 @@
  * Return: void on success
  *
  */
-print_alphabet()
+void print_alphabet()
 {
+	int i;
+	char letter = 'a';
+
 	for (i = 0; i < 26; i++)
 	{
 		_putchar(letter);
