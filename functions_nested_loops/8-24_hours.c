@@ -17,11 +17,11 @@ void jack_bauer(void)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if !(i == 2 && j > 3)
+			if (!(i == 2 && j > 3))
 			{
-				for (k = 0; j < 6; j++)
+				for (k = 0; k < 6; k++)
 				{
-					for (l = 0; j < 10; j++)
+					for (l = 0; l < 10; l++)
 					{
 						_putchar(i);
 						_putchar(j);
