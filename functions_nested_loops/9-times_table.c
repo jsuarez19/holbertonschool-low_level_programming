@@ -21,7 +21,7 @@ void times_table(void)
 			a = num / 10;
 			b = num % 10;
 
-			if (num > 10)
+			if (num >= 10)
 				_putchar(a + '0');
 
 			_putchar(b + '0');
