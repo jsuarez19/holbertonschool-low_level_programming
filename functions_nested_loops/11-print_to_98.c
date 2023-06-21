@@ -31,13 +31,13 @@ void print_to_98(int n)
 			}
 
 			if (c != 0)
-				_putchar(c + '0');
-
-			if (i > 99 || i < -99)
 			{
+				_putchar(c + '0');
 				a = a % 10;
-				_putchar(a + '0');
 			}
+
+			if (i >= 99 || i <= -99)
+				_putchar(a + '0');
 
 			_putchar(b + '0');
 
