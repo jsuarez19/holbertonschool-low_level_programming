@@ -20,7 +20,7 @@ void print_to_98(int n)
 		for (i = n; i > 98; i--)
 		{
 			aux = i;
-			if (n > 99)
+			if (aux > 99)
 				_putchar(aux / 100 + '0');
 			aux = aux % 100;
 			_putchar(aux / 10 + '0');
