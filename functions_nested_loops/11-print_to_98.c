@@ -26,9 +26,11 @@ void print_to_98(int n)
 		}
 		if (aux > 99)
 		{
-		_putchar(aux / 100 + '0');
-		aux = aux % 100;
-		}
+			_putchar(aux / 100 + '0');
+			aux = aux % 100;
+			if (aux / 10 == 0)
+				_putchar(aux / 10 + '0');
+		}	
 		if (aux > 9)
 			_putchar(aux / 10 + '0');
 
@@ -39,4 +41,5 @@ void print_to_98(int n)
 	}
 	_putchar('9');
 	_putchar('8');
+	_putchar('\n');
 }
