@@ -13,67 +13,26 @@
 
 void print_to_98(int n)
 {
-	int i, a, b, c;
-  	
-	if (n > 98)
+	int digit, i, aux;
+
+	for (i = n; i <= 98; i++)
 	{
-		for (i = n; i >= 98; i--)
+		aux = i;
+
+		if (aux < 0)
+			_putchar('-');
+			aux = aux * -1;
+		if (aux > 99)
 		{
-			a = i / 10;
-			b = i % 10;
-			c = i / 100;
-
-			if (i < 0)
-			{
-				_putchar('-');
-				a = a * -1;
-				b = b * -1;
-				c = c * -1;
-			}
-
-			if (c != 0)
-			{
-				_putchar(c + '0');
-				a = a % 10;
-			}
-
-			if (i >= 9 || i <= -9)
-				_putchar(a + '0');
-
-			_putchar(b + '0');
-
-			if (i != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+		_putchar(aux / 100 + '0');
+		aux = aux % 100;
 		}
+		if (aux > 9)
+			_putchar(aux / 10 + '0');
+
+		_putchar(aux % 10 + '0');
+		_putchar(',');
+		_putchar('0');
+
 	}
-	else
-	{
-		for (i = n; i <= 98; i++)
-		{
-			a = i / 10;
-			b = i % 10;
-
-			if (i < 0)
-			{
-				_putchar('-');
-				a = a * -1;
-				b = b * -1;
-			}
-
-			if (a != 0)
-				_putchar(a + '0');
-
-			_putchar(b + '0');
-
-			if (i != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-		}
-	}
-	_putchar('\n');
 }
