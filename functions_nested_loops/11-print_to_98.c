@@ -25,6 +25,8 @@ void print_to_98(int n)
 			aux = aux % 100;
 			_putchar(aux / 10 + '0');
 			_putchar(aux % 10 + '0');
+			_putchar(',');
+			_putchar(' ');
 		}
 	}
 	for (i = n; i < 98; i++)
