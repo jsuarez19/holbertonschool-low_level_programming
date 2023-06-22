@@ -15,7 +15,7 @@ void print_to_98(int n)
 {
 	int i, aux;
 
-	for (i = n; i <= 98; i++)
+	for (i = n; i < 98; i++)
 	{
 		aux = i;
 
@@ -34,7 +34,9 @@ void print_to_98(int n)
 
 		_putchar(aux % 10 + '0');
 		_putchar(',');
-		_putchar('0');
+		_putchar(' ');
 
 	}
+	_putchar('9');
+	_putchar('8');
 }
