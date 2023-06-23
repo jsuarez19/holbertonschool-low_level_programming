@@ -12,7 +12,6 @@
 void print_alphabet_x10(void)
 {
 	int i, j, a, b;
-	char letter;
 
 	for (i = 0; i < 10; i++)
 	{
