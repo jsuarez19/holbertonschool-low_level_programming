@@ -13,7 +13,7 @@ int main(void)
 	long int num = 612852475143;
 	int prime = 2;
 
-	while (prime != number)
+	while (prime != num)
 	{
 		while (num % prime == 0 && num != prime)
 			num = num / prime;
