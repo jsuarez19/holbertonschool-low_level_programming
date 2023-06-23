@@ -3,7 +3,7 @@
 /* more headers goes there */
 
 /**
- * more_nomberts - Prints the numbers from 0 to 14, 10 times
+ * more_numbers - Prints the numbers from 0 to 14, 10 times
  *
  * Return: void on success
  *
@@ -20,7 +20,7 @@ void more_numbers(void)
 			a = j / 10;
 			b = j % 10;
 
-			if(j > 9)
+			if (j > 9)
 				_putchar(a + '0');
 			_putchar(b + '0');
 		}
