@@ -11,7 +11,7 @@
 int main(void)
 {
 	long int num = 612852475143;
-	int prime = 2;
+	long int prime = 2;
 
 	while (prime != num)
 	{
@@ -19,7 +19,8 @@ int main(void)
 			num = num / prime;
 		prime++;
 	}
-	printf("\n");
+	
+	printf("%ld\n", num);
 
 	return (0);
 }
