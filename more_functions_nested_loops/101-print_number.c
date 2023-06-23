@@ -30,21 +30,24 @@ void print_number(int n)
 {
 	int digits = 10;
 	int character;
+	bool state = false;
 
+	if (n < 0)
+		n = n * -1;
 	while (digits >= 0)
 	{
 		character = (n / power(10, digits)) % 10;
 		if (character  == 0)
 		{
 			digits--;
+			if (state == true)
+				_putchar(character + '0');
 		}
 		else
 		{
+			state = true;
 			if (n < 0)
-			{
-				n = n * -1;
 				_putchar('-');
-			}
 			_putchar(character + '0');
 			digits--;
 		}
