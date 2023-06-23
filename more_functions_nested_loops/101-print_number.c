@@ -23,7 +23,6 @@ int power(int base, int exp)
 
 void print_number(int n)
 {
-	int i;
 	int exp = 0;
 
 	while (n / power(10, exp) != 0)
