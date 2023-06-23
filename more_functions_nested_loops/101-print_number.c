@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include "main.h"
 /* more headers goes there */
 
@@ -9,18 +8,27 @@
  * Return: void on success
  *
  */
+
+int power(int base, int exp)
+{
+	int i, num;
+
+	num = 1;
+
+	for (i = 0; i < exp; i++)
+		num = num * base;
+
+	return (num);
+}
+
 void print_number(int n)
 {
 	int i;
 	int exp = 0;
 
-	while (n / pow(10, exp) != 0)
+	while (n / power(10, exp) != 0)
 		exp++;
 
-	for (i = 48; i <= 57; i++)
-	{
-		_putchar(i);
-	}
-
+	printf("%d", exp++);
 	_putchar('\n');
 }
