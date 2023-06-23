@@ -22,12 +22,12 @@ void print_triangle(int size)
 	{
 		for (i = 1; i <= size; i++)
 		{
-			j = 1;
+			j = size;
 			k = 1;
-			while (j < i)
+			while (j > i)
 			{
 				_putchar(' ');
-				j++;
+				j--;
 			}
 			while (k <= i)
 			{
