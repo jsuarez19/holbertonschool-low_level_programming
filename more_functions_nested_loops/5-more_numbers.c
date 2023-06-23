@@ -3,13 +3,13 @@
 /* more headers goes there */
 
 /**
- * print_alphabet_x10 - Prints the alphabet 10 times
+ * more_nomberts - Prints the numbers from 0 to 14, 10 times
  *
  * Return: void on success
  *
  */
 
-void print_alphabet_x10(void)
+void more_numbers(void)
 {
 	int i, j, a, b;
 
