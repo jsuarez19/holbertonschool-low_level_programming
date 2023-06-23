@@ -28,7 +28,7 @@ int power(int base, int exp)
 
 void print_number(int n)
 {
-	int exp = 0, digits = 10;
+	int digits = 10;
 	int character;
 
 	while (digits >= 0)
