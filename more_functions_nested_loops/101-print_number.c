@@ -30,7 +30,7 @@ void print_number(int n)
 {
 	int digits = 10;
 	int character;
-	bool state = false;
+	int state = 0;
 
 	if (n < 0)
 		n = n * -1;
@@ -40,12 +40,12 @@ void print_number(int n)
 		if (character  == 0)
 		{
 			digits--;
-			if (state == true)
+			if (state == 1)
 				_putchar(character + '0');
 		}
 		else
 		{
-			state = true;
+			state = 1;
 			if (n < 0)
 				_putchar('-');
 			_putchar(character + '0');
