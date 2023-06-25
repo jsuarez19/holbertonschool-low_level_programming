@@ -25,7 +25,12 @@ int power(int base, int exp)
 
 	return (num);
 }
-
+/**
+ * print_number - prints an integer
+ * @n: number to print
+ * Return void
+ *     
+ */
 void print_number(int n)
 {
 	int digits = 10;
@@ -39,7 +44,7 @@ void print_number(int n)
 	}
 	while (digits >= 0)
 	{
-		character = :wq((n / (power(10, digits))) % 10);
+		character = ((n / (power(10, digits))) % 10);
 		if (character  == 0 && state == 0)
 		{
 			digits--;
