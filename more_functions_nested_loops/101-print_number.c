@@ -47,8 +47,10 @@ void print_number(int n)
 		{
 			state = 1;
 			if (negative == 1)
+			{
 				_putchar('-');
 				n = n * -1;
+			}
 			_putchar(character + '0');
 			digits--;
 		}
