@@ -39,7 +39,7 @@ void print_number(int n)
 	}
 	while (digits >= 0)
 	{
-		character = (n / power(10, digits)) % 10;
+		character = :wq((n / (power(10, digits))) % 10);
 		if (character  == 0 && state == 0)
 		{
 			digits--;
