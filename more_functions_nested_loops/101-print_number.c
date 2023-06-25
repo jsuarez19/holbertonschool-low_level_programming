@@ -40,17 +40,20 @@ void print_number(int n)
 	while (digits >= 0)
 	{
 		character = (n / power(10, digits)) % 10;
-		if (character  == 0)
+		if (character  == 0 && state == 0)
 		{
 			digits--;
-			if (state == 1)
-				_putchar(character + '0');
 		}
-		else
+		else if (character != 0 && state == 0)
 		{
 			state = 1;
 			if (negative == 1)
 				_putchar('-');
+			_putchar(character + '0');
+			digits--;
+		}
+		else
+		{
 			_putchar(character + '0');
 			digits--;
 		}
