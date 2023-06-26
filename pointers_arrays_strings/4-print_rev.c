@@ -3,12 +3,13 @@
 /* more headers goes there */
 
 /**
- *  * _strlen - returns the length of a string
- *   *
- *    * @s: pointer passed to the function
- *     *
- *      * Return: integer on success
- *       */
+ * _strlen - returns the length of a string
+ *
+ * @s: pointer passed to the function
+ *
+ * Return: integer on success
+ *
+ */
 int _strlen(char *s)
 {
 	int length = 0;
