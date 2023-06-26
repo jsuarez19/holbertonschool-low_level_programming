@@ -5,7 +5,7 @@
 /**
  * reset_to_98 - updates the value to 98
  *
- * @*n: pointer passed to the function
+ * @n: pointer passed to the function
  *
  * Return: 1 if c is a digit, 0 otherwise
  *
