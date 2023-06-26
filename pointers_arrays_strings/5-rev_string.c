@@ -31,11 +31,11 @@ int _strlen(char *s)
  */
 void print_rev(char *s)
 {
-	int length;
+	int length, i;
 
 	length = _strlen(s);
 
-	char reverse[length];
+	char reverse[];
 	/*memory adress of the last character (not /0)*/
 
 	s = s + length - 2;
