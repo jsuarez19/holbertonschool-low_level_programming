@@ -35,7 +35,7 @@ void print_rev(char *s)
 
 	array_size = _strlen(s);
 
-	char reverse[];
+	char reverse[array_size];
 	/*memory adress of the last character (not /0)*/
 
 	s = s + array_size - 2;
