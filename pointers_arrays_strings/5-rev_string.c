@@ -31,14 +31,14 @@ int _strlen(char *s)
  */
 void print_rev(char *s)
 {
-	int length, i;
+	int array_size, i;
 
-	length = _strlen(s);
+	array_size = _strlen(s);
 
 	char reverse[];
 	/*memory adress of the last character (not /0)*/
 
-	s = s + length - 2;
+	s = s + array_size - 2;
 
 	while (*s != '\0')
 	{
