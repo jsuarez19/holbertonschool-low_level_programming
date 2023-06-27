@@ -12,7 +12,7 @@
 int _atoi(char *s)
 {
 	int total = 0, value;
-	char sign;
+	char sign = 43;
 
 	while (*s < 48 || *s > 57)
 	{
@@ -24,6 +24,7 @@ int _atoi(char *s)
 	{
 		value = (int)(*s - '0');
 		total = total * 10 + value;
+		s++;
 	}
 
 	if (sign == 45)
