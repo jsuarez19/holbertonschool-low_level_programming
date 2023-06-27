@@ -14,10 +14,10 @@ int _atoi(char *s)
 	int total = 0, value;
 	int sign = 1;
 
-	while (*s < 48 || *s > 57)
+	while ((*s < 48 || *s > 57) && *s!= '\0')
 	{
 		if (*s == 45)
-		       sign *= -1;	
+		       sign *= -1;
 		s++;
 	}
 
