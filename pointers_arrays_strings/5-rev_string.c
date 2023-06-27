@@ -31,28 +31,18 @@ int _strlen(char *s)
  */
 void print_rev(char *s)
 {
-	int array_size, i;
+	int array_size, first, last;
+	char tmp;
 
 	array_size = _strlen(s);
+	last = array_size - 1;
 
-	char reverse[array_size];
-	/*memory adress of the last character (not /0)*/
-
-	s = s + array_size - 2;
-
-	while (*s != '\0')
+	while (first < last)
 	{
-		reverse[i] = *s;
-		s--;
-		i++;
+		tmp = s[first];
+		s[first] = s[last];
+		s[last] = s[first];
+		last--;
+		first++;
 	}
-	i++;
-
-	while (*s != '\0')
-	{
-		*s = reverse[i];
-		i++;
-		s++;
-	}
-
 }
