@@ -17,9 +17,9 @@ int mod(int n, int div)
 	result = n % div;
 	if (div < n)
 	{
-	if (result == 0)
-		state = 0;
-	mod(n, div + 1);
+		if (result == 0)
+			state = 0;
+		mod(n, div + 1);
 	}
 
 	return (state);
@@ -37,5 +37,7 @@ int is_prime_number(int n)
 	int state;
 
 	state = mod(n, 2);
+	if (n < 2)
+		state = 0;
 	return (state);
 }
