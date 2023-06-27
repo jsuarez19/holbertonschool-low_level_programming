@@ -24,12 +24,12 @@ int _strlen(char *s)
 }
 
 /**
- * print_rev - prints a string in reverse
+ * rev_string - reverses a string
  *
  * @s: pointer passed to the function
  *
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int array_size, first, last;
 	char tmp;
