@@ -30,9 +30,9 @@ int _atoi(char *s)
 		s++;
 	}
 
-	final_total = -((int)total);
+	final_total = ((int)total);
 	if (sign == -1)
-		final_total *= -1;
+		final_total = -((int)total);
 
 	return (final_total);
 }
