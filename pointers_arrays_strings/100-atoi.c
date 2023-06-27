@@ -12,7 +12,8 @@
  */
 int _atoi(char *s)
 {
-	int total = 0, value;
+	unsigned int total = 0;
+	int value, final_total;
 	int sign = 1;
 
 	while ((*s < 48 || *s > 57) && *s != '\0')
@@ -29,8 +30,9 @@ int _atoi(char *s)
 		s++;
 	}
 
-	if (sign == -1 && total != INT_MIN)
-		total *= -1;
+	final_total = -((int)total);
+	if (sign == -1)
+		final_total *= -1;
 
-	return (total);
+	return (final_total);
 }
