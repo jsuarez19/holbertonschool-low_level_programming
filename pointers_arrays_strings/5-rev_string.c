@@ -41,7 +41,7 @@ void print_rev(char *s)
 	{
 		tmp = s[first];
 		s[first] = s[last];
-		s[last] = s[first];
+		s[last] = tmp;
 		last--;
 		first++;
 	}
