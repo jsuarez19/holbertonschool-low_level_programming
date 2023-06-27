@@ -11,12 +11,12 @@
  */
 int _atoi(char *s)
 {
-	int total = 0;
+	int total = 0, value;
 	char sign;
 
 	while (*s < 48 || *s > 57)
 	{
-		sign = *s
+		sign = *s;
 		s++;
 	}
 
