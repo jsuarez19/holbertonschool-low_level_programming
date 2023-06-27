@@ -30,9 +30,9 @@ int _atoi(char *s)
 		s++;
 	}
 
-	if (sign == -1 && total == INT_MAX + 1)
+	if (sign == -1 && total == 2147483648)
 		final_total = INT_MIN;
-	else if (sign == -1 && total != INT_MAX + 1)
+	else if (sign == -1 && total != 2147483648)
 		final_total = -((int)total);
 	else
 		final_total = ((int)total);
