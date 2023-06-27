@@ -22,7 +22,7 @@ char *_strcpy(char *dest, char *src)
 		length++;
 	}
 	dest++;
-	*dest = "\0";
+	*dest = '\0';
 	dest -= length;
 	return (dest);
 }
