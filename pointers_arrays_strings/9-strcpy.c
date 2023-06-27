@@ -12,7 +12,7 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int length = 0;
+	int length = 1;
 
 	while (*src != '\0')
 	{
@@ -21,7 +21,8 @@ char *_strcpy(char *dest, char *src)
 		dest++;
 		length++;
 	}
-	*(dest + 1) = *(src + 1);
+	dest++
+	*dest = NULL;
 	dest -= length;
 	return (dest);
 }
