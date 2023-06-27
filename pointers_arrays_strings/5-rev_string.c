@@ -33,9 +33,10 @@ void rev_string(char *s)
 {
 	int array_size, first, last;
 	char tmp;
-
+	
 	array_size = _strlen(s);
 	last = array_size - 1;
+	first = 0;
 
 	while (first < last)
 	{
