@@ -36,5 +36,6 @@ char *_strdup(char *str)
 		p++;
 	}
 
-	return (p - size);
+	p-= size;
+	return (p);
 }
