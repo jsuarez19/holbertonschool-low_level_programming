@@ -32,10 +32,8 @@ char *_strdup(char *str)
 	str -= size;
 	for (i = 0; i < size; i++)
 	{
-		*p = *str;
-		p++;
+		*(p + i) = *str;
 	}
 
-	p-= size;
 	return (p);
 }
