@@ -2,6 +2,25 @@
 #include "main.h"
 #include <stdlib.h>
 /* more headers goes there */
+/**
+ * _strlen - returns the length of a string
+ *
+ * @s: pointer passed to the function
+ *
+ * Return: integer on success
+ */
+
+int _strlen(char *s)
+{
+	int length = 0;
+
+	while (*s != '\0')
+	{
+		length++;
+		s++;
+	}
+	return (length);
+}
 
 /**
  * argstostr - concatenates arguments
@@ -14,17 +33,26 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i = 1;
+	int concat_length = 0;
+	int i, j, k;
 	char *concat;
 
-	concat = malloc(ac * 2);
+	for (i = 0; i < ac; i++)
+		concat_length += strlen(av[i]);
 
+	concat = malloc(concat_lenght + ac);
 	if (concat == NULL)
-	return (NULL);
+		return (NULL);
 
-	while (i < ac)
+	for (i = 0; i < ac; i++)
 	{
-	concat = av[i] + '\n';
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			concat[k] = av[i][j];
+			k++;
+		}
+		concat[k] = '\n';
+		k++;
 	}
 
 	return (concat);
