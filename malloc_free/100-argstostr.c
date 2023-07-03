@@ -40,7 +40,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 		concat_length += _strlen(av[i]);
 
-	concat = malloc(concat_length + ac);
+	concat = malloc(concat_length + ac + 1);
 	if (concat == NULL)
 		return (NULL);
 
