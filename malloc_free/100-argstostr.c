@@ -34,7 +34,7 @@ int _strlen(char *s)
 char *argstostr(int ac, char **av)
 {
 	int concat_length = 0;
-	int i, j, k;
+	int i, j, k = 0;
 	char *concat;
 
 	for (i = 0; i < ac; i++)
