@@ -1,39 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
 #include "variadic_functions.h"
-
 /**
- * main - Entry point
+ * print_numbers - prints numbers
  *
- * @argc: number of arguments
- * @argv: array of arguments
+ * @separator: First argument
+ * @n: Second argument
  *
- * Description: prints a line
- *
- * Return: Always 0 (Success)
  */
 
-int main(int argc, char *argv[])
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int result;
-	int a, b;
-	int (*operator)(int, int);
+	va_list ap;
+	unsigned int i;
 
-	if (argc != 4)
+	va_start(ap, n);
+	for (i = 0; i < n; i++)
 	{
-		printf("Error\n");
-		exit(98);
+		printf("%d", va_arg(ap, int));
+		if (separator != NULL)
+			printf("%s", separator);
 	}
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	operator = get_op_func(argv[2]);
-	if (operator == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
-
-	result = operator(a, b);
-	printf("%d\n", result);
-	return (0);
+	printf("\n");
+	va_end(ap);
+	return (sum);
 }
