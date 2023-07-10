@@ -3,19 +3,14 @@
 #include <stdlib.h>
 /* more headers goes there */
 /**
- * init_dog - initialize struct dog
+ * free_dog - frees dogs
  *
  * @d: pointer passed to the function
- * @name: pointer passed to the function
- * @age: pointer passed to the function
- * @owner: pointer passed to the function
  */
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void free_dog(dog_t *d)
 {
-	if (d != NULL)
-	{
-		d->name = name;
-		d->age = age;
-		d->owner = owner;
-	}
+	free(d->name);
+	free(d->age);
+	free(d->owner);
+	free(d)free(d);
 }
