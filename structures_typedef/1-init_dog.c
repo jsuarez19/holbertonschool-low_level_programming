@@ -2,7 +2,6 @@
 #include "dog.h"
 #include <stdlib.h>
 /* more headers goes there */
-
 /**
  * init_dog - initialize struct dog
  *
