@@ -11,6 +11,8 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
+	int i;
+
 	while (array[i] != '\0')
 	{
 		action(array[i]);
