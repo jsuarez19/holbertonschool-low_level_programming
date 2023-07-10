@@ -6,7 +6,7 @@
  * main - Entry point
  *
  * @argc: number of arguments
- * @argv array of arguments
+ * @argv: array of arguments
  *
  * Description: prints a line
  *
