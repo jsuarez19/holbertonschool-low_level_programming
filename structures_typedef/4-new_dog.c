@@ -31,8 +31,8 @@ void *_strcpy(char *dest, char *src)
 	int i = 0;
 	while (src[i] != '\0')
 	{
-	dest[i] = src[i];
-	i++;
+		dest[i] = src[i];
+		i++;
 	}
 
 	dest [i] = '\0';
@@ -52,7 +52,6 @@ void *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog2;
-	char *dog2_name, dog2_owner;
 	
 	dog2 = malloc(sizeof(dog_t));
 	if (dog2 == NULL)
@@ -62,5 +61,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	_strcpy(dog2->name, name);
 	_strcpy(dog2->owner, owner);
+	
+	dog2->age = age;
 
+	return dog2;
 }
