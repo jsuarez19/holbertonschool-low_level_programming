@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * get_op_func - select option
- * 
+ *
  * @s: operator passed to the function
  *
  * Return: pointer to the function according to hte operator

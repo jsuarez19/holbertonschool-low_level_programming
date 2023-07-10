@@ -5,6 +5,9 @@
 /**
  * main - Entry point
  *
+ * @argc: number of arguments
+ * @argv array of arguments
+ *
  * Description: prints a line
  *
  * Return: Always 0 (Success)
@@ -15,7 +18,7 @@ int main(int argc, char *argv[])
 	int result;
 	int a, b;
 	int (*operator)(int, int);
-	
+
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -29,7 +32,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	
+
 	result = operator(a, b);
 	printf("%d\n", result);
 	return (0);
