@@ -3,9 +3,10 @@
 #include <stdlib.h>
 /* more headers goes there */
 /**
- * free_dog - frees dogs
+ * print_name - prints name
  *
- * @d: pointer passed to the function
+ * @name: pointer passed to the function
+ * @f: pointer passed to the function
  */
 void print_name(char *name, void (*f)(char *))
 {
